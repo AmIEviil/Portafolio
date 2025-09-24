@@ -1,0 +1,75 @@
+#home {
+  height: 100vh;
+  scroll-snap-align: start;
+
+  .card_center-container {
+    display: block;
+    border: 2px solid rgb(204, 243, 129);
+    border-radius: 16px;
+    width: 350px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+
+  .card_center-container:hover {
+    border: 2px solid rgb(204, 243, 129);
+    box-shadow: 0 0 10px rgb(204, 243, 129);
+    background-color: rgba(203, 243, 129, 0.096);
+  }
+
+  .card_center-content {
+    padding: 0.5em 2em;
+  }
+}
+
+#about-me {
+  height: 100vh;
+  scroll-snap-align: start;
+
+  .card_about {
+    display: block;
+    border: 2px solid rgb(204, 243, 129);
+    border-radius: 16px;
+    width: 350px;
+    position: relative;
+    top: 30%;
+    left: 15%;
+  }
+
+  .card_about:hover {
+    border: 2px solid rgb(204, 243, 129);
+    box-shadow: 0 0 10px rgb(204, 243, 129);
+    background-color: rgba(203, 243, 129, 0.096);
+  }
+
+  .card_about-content {
+    padding: 0.5em 2em;
+  }
+
+  .card_about-me {
+    display: block;
+    border: 2px solid rgb(204, 243, 129);
+    border-radius: 16px;
+    width: 350px;
+    position: relative;
+    top: 40%;
+    left: 60%;
+  }
+
+  .card_about-me:hover {
+    border: 2px solid rgb(204, 243, 129);
+    box-shadow: 0 0 10px rgb(204, 243, 129);
+    background-color: rgba(203, 243, 129, 0.096);
+  }
+}
+
+#projects {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+#contact {
+  height: 100vh;
+  scroll-snap-align: start;
+}
