@@ -2,38 +2,35 @@
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  position: fixed;
-  top: 0px;
-  width: 100%;
+  height: fit-content;
 }
 
 .nav_barTitle {
-  margin: 2em 2em;
+  margin: 1em 2em;
 }
 
 .nav_barList {
   display: flex;
   align-items: center;
   list-style: none;
+  margin-right: 2em;
 }
 
 .nav_barOptions {
   margin: 0 1em;
 }
 
-.optionsTtext {
+.optionsText {
   text-decoration: none;
-  color: white;
   transition-property: transform;
   transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
   transform: translateY(100%);
 }
 
-.optionsTtext:hover {
-  text-shadow: 0 0 10px rgb(204, 243, 129);
-  transform: translateY(0);
-}
-.nav_barOptions:hover {
-  text-shadow: 0 0 10px rgb(204, 243, 129);
+@media (max-width: 768px) {
+  .nav_barList {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
 }

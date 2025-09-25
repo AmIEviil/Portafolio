@@ -25,7 +25,7 @@ const LanguageSwitcher = ({ version = "clasic" }: LanguageSwitcherProps) => {
           key={lang.code}
           onClick={() => changeLanguage(lang.code)}
           className={`btn-language 
-            ${i18n.language === lang.code ? "active" : ""}
+            ${i18n.language === lang.code ? "active" : "cursor-pointer"}
             ${version === "clasic" ? "py-1 px-3" : "short"}
             `}
           disabled={i18n.language === lang.code}

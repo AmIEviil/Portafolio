@@ -1,40 +1,81 @@
 @import "tailwindcss";
 :root {
-  line-height: 1.5;
-  font-weight: 400;
+  /* Paleta base (tus colores) */
+  --custom-black: #000000;
+  --custom-dim-gray: #66666e;
+  --custom-taupe-gray: #9999a1;
+  --custom-platinum: #e6e6e9;
+  --custom-white: #f4f4f6;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Tokens semánticos (por defecto = light) */
+  --color-bg: var(--custom-platinum);
+  --color-text: var(--custom-black);
+  --color-muted: var(--custom-taupe-gray);
+  --color-surface: var(--custom-white);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(204, 243, 129);
-  /* background: #000000; */
-  background: linear-gradient(90deg, #000 67%, #ccf381 110%);
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* scrollbar tokens */
+  --scrollbar-track: rgb(203, 243, 129);
+  --scrollbar-thumb: #000;
 }
 
+/* Dark theme overrides */
+html[data-theme="dark"] {
+  --color-bg: #0b0d10; /* fondo oscuro */
+  --color-text: var(--custom-white);
+  --color-muted: #9a9aa1;
+  --color-surface: #0f1316;
+
+  --scrollbar-track: #1f2937;
+  --scrollbar-thumb: #444;
+}
+
+/* Global styles */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  color: var(--color-text);
+  background: var(--color-bg);
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Ejemplo de "surface" (tarjetas, paneles) */
+.surface {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.06);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Muted text */
+.muted {
+  color: var(--color-muted);
+}
+
+/* Scrollbar (puedes adaptar) */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(203, 243, 129);
+  background: var(--scrollbar-track);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: var(--scrollbar-thumb);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  filter: brightness(0.9);
 }

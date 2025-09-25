@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../LanguageSwitch/LanguageSwitcher";
 import style from "./TopBar.module.css";
+import ThemeToggle from "../ThemeTogle/ThemeTogle";
 
 const TopBar = () => {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ const TopBar = () => {
 
   return (
     <>
-      <nav className={style.nav_bar}>
+      <div className={style.nav_bar}>
         <h3 className={style.nav_barTitle}>{t("fullstack_developer")}</h3>
         <ul className={style.nav_barList}>
           {options.map((option) => (
@@ -24,9 +25,10 @@ const TopBar = () => {
               </a>
             </li>
           ))}
+          <ThemeToggle />
           <LanguageSwitcher version="short" />
         </ul>
-      </nav>
+      </div>
     </>
   );
 };

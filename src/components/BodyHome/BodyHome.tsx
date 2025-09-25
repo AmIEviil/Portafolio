@@ -1,80 +1,39 @@
+import { useTranslation } from "react-i18next";
 import "./BodyHome.css";
+import CustomButton from "../../Button/CustomButton";
+import ArrowIcon from "../../icons/ArrowIcon";
 const BodyHome = () => {
+  const { t } = useTranslation();
   return (
-    <>
+    <div className="">
       <section id="home">
-        <div className="card_center-container ">
-          <div className="card_center-content shiny">
-            <h3 className="card_center-title">Desarrollador Full Stack</h3>
-            <p className="card_center-label">
-              Me gusta desarrollar productos robustos y escalables con una grata
-              experiencia de usuario
-            </p>
+        <div className="home_container">
+          <div className="name_container">
+            <span className="my_name">GONZALO CARO</span>
+          </div>
+          <ArrowIcon size={32} rotate={140} strokeWidth={1} />
+          <div className="mt-4">
+            <p>{t("body.first_text")}</p>
+            <p>{t("body.second_text")}</p>
+            <p>{t("body.third_text")}</p>
+            <p>{t("body.fourth_text")}</p>
+            <img src="" alt="" />
           </div>
         </div>
-        <div className="card_image-container">
-          <img src="" alt="" />
+        <div className="btn_contact-me-container">
+          <CustomButton
+            label={t("contact")}
+            onClick={() => {
+              window.location.href = "#contact";
+            }}
+            className="btn"
+            iconPosition="right"
+            icon={<ArrowIcon rotate={45} className="ml-1" strokeWidth={3} />}
+          />
+
         </div>
       </section>
-      <section id="about-me">
-        <div className="card_about ">
-          <div className="card_about-content ">
-            <h1 className="">Diseño</h1>
-            <p className="card_about-label">
-              Me gusta siempre poder llevar a cabo diseños unicos y siempre con
-              enfoque en la experiencia del usuario
-            </p>
-          </div>
-        </div>
-        <div className="card_about-me">
-          <div className="card_about-content">
-            <h1 className="">Gonzalo Caro</h1>
-            <p className="card_about-label">Comenzando en esto mi rey</p>
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <div className="card_projects-container">
-          <div className="card_projects-content">
-            <h3 className="card_projects-title">Ultimos años</h3>
-            <p className="card_projects-label">
-              Le he puesto weno a la wea yo creo
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div className="card_contact-container">
-          <div className="card_contact-content">
-            <h3 className="card_contact-title">Enviame un mensaje </h3>
-            <p>
-              Cualquier duda, inquietud, proyecto, lo que sea, no dudes en
-              contactarme
-            </p>
-            <form action="/action_page.php">
-              <label>First name:</label>
-              <br />
-              <input type="text" id="fname" name="fname" value="John" />
-              <br />
-              <label>Last name:</label>
-              <br />
-              <input type="text" id="lname" name="lname" value="Doe" />
-              <br />
-              <br />
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
-        </div>
-      </section>
-      <section id="footer">
-        <div className="card_footer-container">
-          <div className="card_footer-content">
-            <h3 className="card_footer-title">Gonzalo Caro</h3>
-            <p className="card_footer-label">Desarrollador FrontEnd</p>
-          </div>
-        </div>
-      </section>
-    </>
+    </div>
   );
 };
 

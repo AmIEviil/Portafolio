@@ -3,5 +3,11 @@
   "home": "Inicio",
   "about": "Sobre mí",
   "projects": "Proyectos",
-  "contact": "Contacto"
+  "contact": "Contacto",
+  "body": {
+    "first_text": "Apasionado por aprender, mejorar y crecer.",
+    "second_text": "Siempre en busca de nuevos desafíos.",
+    "third_text": "Listo para colaborar en proyectos innovadores.",
+    "fourth_text": "Abierto a oportunidades."
+  }
 }

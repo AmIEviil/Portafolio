@@ -3,5 +3,11 @@
   "home": "Home",
   "about": "About",
   "projects": "Projects",
-  "contact": "Contact"
+  "contact": "Contact",
+  "body": {
+    "first_text": "Passionate about learning, improving, and growing.",
+    "second_text": "Always seeking new challenges.",
+    "third_text": "Ready to collaborate on innovative projects.",
+    "fourth_text": "Open to opportunities."
+  }
 }
