@@ -19,10 +19,21 @@ const TopBar = () => {
         <h3 className={style.nav_barTitle}>{t("fullstack_developer")}</h3>
         <ul className={style.nav_barList}>
           {options.map((option) => (
-            <li className={style.nav_barOptions} key={option.name}>
-              <a className={style.optionsText} href={option.href}>
-                {option.name}
-              </a>
+            <li
+              className={style.nav_barOptions}
+              key={option.name}
+              onClick={() => {
+                const el = document.getElementById(
+                  option.href.replace("#", "")
+                );
+                if (el) {
+                  const y =
+                    el.getBoundingClientRect().top + window.scrollY - 80; // 80px = alto navbar
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              }}
+            >
+              <span className={style.optionsText}>{option.name}</span>
             </li>
           ))}
           <ThemeToggle />

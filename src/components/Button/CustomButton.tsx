@@ -1,5 +1,6 @@
+import "./CustomButton.css";
 interface ButtonProps {
-  label: string;
+  label?: string;
   onClick: () => void;
   disabled?: boolean;
   className?: string;
@@ -17,15 +18,28 @@ const CustomButton = ({
   iconPosition = "left",
   type = "button",
 }: ButtonProps) => {
+  const handleClassByType = () => {
+    switch (type) {
+      case "submit":
+        return "btn-submit";
+      case "reset":
+        return "btn-reset";
+      case "button":
+      default:
+        return "btn-default";
+    }
+  };
+  const buttonClass = handleClassByType();
+
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`flex items-center ${className}`}
+      className={`flex items-center ${buttonClass} ${className}`}
       type={type}
     >
       {icon && iconPosition === "left" && <span className="icon">{icon}</span>}
-      <span>{label}</span>
+      {label && <span>{label}</span>}
       {icon && iconPosition === "right" && <span className="icon">{icon}</span>}
     </button>
   );

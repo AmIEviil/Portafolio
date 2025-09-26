@@ -9,5 +9,25 @@
     "second_text": "Always seeking new challenges.",
     "third_text": "Ready to collaborate on innovative projects.",
     "fourth_text": "Open to opportunities."
+  },
+  "card_info": {
+    "who_im": "WHO I AM",
+    "about_me": "(About Me)",
+    "my_description": "Full stack developer with over 2 years of experience in both frontend and backend development. Certified as a Computer Programmer Analyst and currently pursuing a degree in Software Development Engineering.",
+    "skills_description": "From SinglePage to applications with backend integration. Working with modern and scalable technologies to provide complete solutions that are easy to maintain and ready for real users.",
+    "ux_ui_description": "Developing is not just writing code, it's creating experiences. Passionate about UI/UX design, I strive to create responsive, intuitive, and attractive interfaces that not only work well but also look good."
+  },
+  "contact_me": {
+    "ideas": "DO YOU HAVE AN IDEA IN MIND?",
+    "make_it_real": "LET'S MAKE IT REAL",
+    "your_idea": "Tell me your idea",
+    "email": "Email",
+    "name": "Name",
+    "message": "Message",
+    "send_message": "Send Message"
+  },
+  "footer": {
+    "rights_reserved": "All rights reserved.",
+    "social_media": "Social Media"
   }
 }

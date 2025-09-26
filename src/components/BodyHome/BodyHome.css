@@ -1,5 +1,12 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #home {
-  height: 90vh;
+  height: 100vh;
   font-family: monospace;
   scroll-snap-align: start;
   display: flex;
@@ -35,43 +42,31 @@
   padding-top: 2rem;
 }
 
-.btn {
+#about-me {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#contact {
+  font-family: monospace;
+  padding: 0 2rem;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  overflow: hidden;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--color-muted);
-  border: none;
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  font-weight: 700;
 }
 
-.btn::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background-color: var(--color-text);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 1s ease, height 1s ease;
-  z-index: 0;
+.section {
+  min-height: 100vh;
 }
 
-.btn:hover {
-  color: var(--color-bg);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn:hover::before {
-  width: 300%;
-  height: 300%;
-}
-
-.btn span {
+.layer {
   position: relative;
   z-index: 1;
 }

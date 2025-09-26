@@ -9,5 +9,25 @@
     "second_text": "Siempre en busca de nuevos desafíos.",
     "third_text": "Listo para colaborar en proyectos innovadores.",
     "fourth_text": "Abierto a oportunidades."
+  },
+  "card_info": {
+    "who_im": "QUIÉN SOY",
+    "about_me": "(Sobre mí)",
+    "my_description": "Desarrollador full stack con más de 2 años de experiencia, tanto frontend como backend. Titulado como Analista Programador Computacional y actualmente cursando Ingeniería en Desarrollo de Software.",
+    "skills_description": "Desde SinglePage hasta aplicaciones con integracion backend. Trabajando con tecnologias modernas y escalables para ofrecer soluciones completas faciles de mantener y listas para usuarios reales.",
+    "ux_ui_description": "Desarrollar no es solo escribir codigo, es crear experiencias. Apasionado por el diseño UI/UX, me esfuerzo por crear interfaces responsivas, intuitivas y atractivas que no solo funcionen bien, sino que tambien se vean bien."
+  },
+  "contact_me": {
+    "ideas": "TIENES ALGUNA IDEA EN MENTE?",
+    "make_it_real": "HAGÁMOSLA REALIDAD",
+    "your_idea": "Cuentame tu idea",
+    "email": "Email",
+    "name": "Nombre",
+    "message": "Mensaje",
+    "send_message": "Enviar Mensaje"
+  },
+  "footer": {
+    "rights_reserved": "Todos los derechos reservados.",
+    "social_media": "Redes Sociales"
   }
 }

@@ -1,5 +1,6 @@
+import s from "./CustomInput.module.css";
 interface CustomInputProps {
-  label: string;
+  label?: string;
   placeholder?: string;
   type?: string;
   value?: string;
@@ -16,18 +17,30 @@ const CustomInput = ({
   className = "",
 }: CustomInputProps) => {
   return (
-    <div className="flex flex-col mb-4 ml-4">
+    <div className="w-full">
       <span>
         <label htmlFor="custom-input">{label}</label>
       </span>
-      <input
-        id="custom-input"
-        type={type}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className={`custom-input ${className}`}
-        placeholder={placeholder}
-      />
+      {type !== "text-area" && (
+        <input
+          id="custom-input"
+          type={type}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          className={`${s.custom_input} ${className}`}
+          placeholder={placeholder}
+        />
+      )}
+      {type === "text-area" && (
+        <textarea
+          id="custom-input"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          className={`${s.custom_input} ${s.area} ${className}`}
+          placeholder={placeholder}
+          rows={4}
+        />
+      )}
     </div>
   );
 };

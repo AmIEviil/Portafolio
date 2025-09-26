@@ -3,6 +3,8 @@
   width: 100%;
   justify-content: space-between;
   height: fit-content;
+  position: absolute;
+  z-index: 2;
 }
 
 .nav_barTitle {
@@ -21,11 +23,8 @@
 }
 
 .optionsText {
+  cursor: pointer;
   text-decoration: none;
-  transition-property: transform;
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1.15);
-  transform: translateY(100%);
 }
 
 @media (max-width: 768px) {
