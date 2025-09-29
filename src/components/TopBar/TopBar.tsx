@@ -33,7 +33,9 @@ const TopBar = () => {
                 }
               }}
             >
-              <span className={style.optionsText}>{option.name}</span>
+              <span className={style.revealText} data-text={option.name}>
+                {option.name}
+              </span>
             </li>
           ))}
           <ThemeToggle />

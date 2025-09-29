@@ -1,0 +1,105 @@
+.myselfContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  padding: 0 2rem;
+}
+.myselfContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+}
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--color-muted);
+}
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.descriptionSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  width: 60%;
+  gap: 2rem;
+}
+
+.descriptionText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subtitle {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+.subtitleSkill {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+.language {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--color-text);
+}
+
+.aboutMeContainer {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.imgContainer {
+  width: 80%;
+  image-resolution: from-image;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.aboutMeTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+  width: 100%;
+}
+.aboutMeDescriptionText {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  align-items: start;
+  justify-content: center;
+}
+
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}

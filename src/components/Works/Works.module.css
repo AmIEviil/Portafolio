@@ -1,0 +1,141 @@
+.worksContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.worksContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+}
+
+.title {
+  align-self: flex-start;
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--color-muted);
+}
+.projectsInfo {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 0.5rem;
+  padding-left: 35%;
+}
+.projectTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-muted);
+}
+.experienceText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30%;
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: start;
+  width: 100%;
+  position: relative;
+}
+.scrollingProjects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  scroll-behavior: smooth;
+}
+
+.projectWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: start;
+}
+
+.fixedNumber {
+  font-size: 3rem;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: right;
+  align-self: flex-start;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+  align-items: end;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-bg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectImg {
+  height: auto;
+  display: block;
+}
+
+.projectDetails {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.projectText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.projectDesc {
+  font-size: 1rem;
+}
+
+.projectName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.projectMeta {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.projectState {
+  border: 1px solid var(--color-muted);
+  padding: 0.2rem 0.5rem;
+  border-radius: 16px;
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+.projectYear {
+  background-color: var(--scrollbar-thumb);
+  padding: 0.2rem 0.5rem;
+  border-radius: 16px;
+  font-size: 1rem;
+  color: var(--color-bg);
+}

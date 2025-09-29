@@ -11,11 +11,44 @@
     "fourth_text": "Open to opportunities."
   },
   "card_info": {
-    "who_im": "WHO I AM",
-    "about_me": "(About Me)",
-    "my_description": "Full stack developer with over 2 years of experience in both frontend and backend development. Certified as a Computer Programmer Analyst and currently pursuing a degree in Software Development Engineering.",
+    "who_im": "WHAT I DO",
+    "about_me": "(SERVICES)",
+    "my_description": "I specialize in creating complete web applications, from designing attractive interfaces to implementing robust backend solutions. My focus is on delivering high-quality products that not only meet technical requirements but also offer an exceptional user experience.",
     "skills_description": "From SinglePage to applications with backend integration. Working with modern and scalable technologies to provide complete solutions that are easy to maintain and ready for real users.",
     "ux_ui_description": "Developing is not just writing code, it's creating experiences. Passionate about UI/UX design, I strive to create responsive, intuitive, and attractive interfaces that not only work well but also look good."
+  },
+  "work": {
+    "title": "WORK",
+    "projects": {
+      "title": "(PROJECTS)",
+      "description": "Digital experiences I have been creating, designed to maintain smooth and engaging navigation.",
+      "piscinas": {
+        "description": "Management of maintenance and payments for the company."
+      },
+      "casona": {
+        "description": "SAAS for event management, reservations, and payments."
+      },
+      "teteria": {
+        "description": "SAAS for table and order management."
+      },
+      "states": {
+        "development": "In Development",
+        "finished": "Finished",
+        "paused": "Paused",
+        "coming_soon": "Coming Soon"
+      }
+    },
+    "description": "Digital experiences I have been creating, designed to maintain smooth and engaging navigation."
+  },
+  "my_self": {
+    "title": "DEVELOPER",
+    "skills": "Skills",
+    "languages_tools": "Languages & Tools",
+    "frameworks": "Frameworks & Libraries",
+    "my_self_text": "I am a developer passionate about turning ideas into digital experiences.",
+    "about_me": "(About Me)",
+    "about_me_description": "Full stack developer with over 2 years of experience, both frontend and backend. Graduated as a Computer Programming Analyst and currently pursuing a Software Development Engineering degree, which allows me to deepen my knowledge in architecture, best practices, and technical leadership.",
+    "about_me_description2": "I am motivated by learning, solving complex problems, and collaborating in a team to deliver quality products. I aim to continue growing in environments where I can provide value through efficient and scalable solutions."
   },
   "contact_me": {
     "ideas": "DO YOU HAVE AN IDEA IN MIND?",

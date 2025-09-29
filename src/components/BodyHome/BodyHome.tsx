@@ -10,6 +10,8 @@ import ArrowIcon from "../../icons/ArrowIcon";
 import CardInfo from "../CardInfo/CardInfo";
 import ContactMe from "../ContactMe/ContactMe";
 import Footer from "../Footer/Footer";
+import Works from "../Works/Works";
+import MySelf from "../MySelf/MySelf";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -37,6 +39,62 @@ const BodyHome = () => {
         opacity: 1,
         scrollTrigger: {
           trigger: "#about-me",
+          start: "top 80%",
+          end: "top 20%",
+          scrub: 1.5,
+        },
+      }
+    );
+
+    // efecto de "salida" para my-self
+    gsap.to("#about-me", {
+      opacity: 0.1,
+      scale: 0.8,
+      scrollTrigger: {
+        trigger: "#my-self",
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 1.5,
+      },
+    });
+
+    // efecto de "entrada" para my-self
+    gsap.fromTo(
+      "#my-self",
+      { opacity: 0, scale: 0.8 },
+      {
+        opacity: 1,
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#my-self",
+          start: "top 80%",
+          end: "top 20%",
+          scrub: 1.5,
+        },
+      }
+    );
+
+    // efecto de "salida" para my-self
+    gsap.to("#my-self", {
+      opacity: 0.1,
+      scale: 0.8,
+      scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 1.5,
+      },
+    });
+
+    // efecto de "entrada" para contact
+    gsap.fromTo(
+      "#contact",
+      { opacity: 0, scale: 0.8 },
+      {
+        opacity: 1,
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#contact",
           start: "top 80%",
           end: "top 20%",
           scrub: 1.5,
@@ -74,7 +132,12 @@ const BodyHome = () => {
             <CustomButton
               label={t("contact")}
               onClick={() => {
-                window.location.href = "#contact";
+                const el = document.getElementById("contact");
+                if (el) {
+                  const y =
+                    el.getBoundingClientRect().top ;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
               }}
               className="btn"
               iconPosition="right"
@@ -86,10 +149,11 @@ const BodyHome = () => {
         <section id="about-me" className="section layer">
           <CardInfo />
         </section>
-        <section id="projects" className="">
-          <span className="flex items-center justify-center">
-            Work in progress...
-          </span>
+        <section id="projects" className="section layer">
+          <Works />
+        </section>
+        <section id="my-self" className="section layer">
+          <MySelf />
         </section>
         <section id="contact" className="section layer">
           <ContactMe />

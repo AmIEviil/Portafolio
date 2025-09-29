@@ -44,11 +44,17 @@
 
 #about-me {
   font-family: monospace;
+}
+
+#projects {
+  font-family: monospace;
+}
+
+#my-self {
+  font-family: monospace;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
+  align-items: start;
+  padding-top: 10%;
 }
 
 #contact {

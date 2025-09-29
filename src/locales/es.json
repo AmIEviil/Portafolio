@@ -11,11 +11,44 @@
     "fourth_text": "Abierto a oportunidades."
   },
   "card_info": {
-    "who_im": "QUIÉN SOY",
-    "about_me": "(Sobre mí)",
-    "my_description": "Desarrollador full stack con más de 2 años de experiencia, tanto frontend como backend. Titulado como Analista Programador Computacional y actualmente cursando Ingeniería en Desarrollo de Software.",
+    "who_im": "QUE HAGO YO",
+    "about_me": "(SERVICIOS)",
+    "my_description": "Me especializo en crear aplicaciones web completas, desde el diseño de interfaces atractivas hasta la implementación de soluciones backend robustas. Mi enfoque es entregar productos de alta calidad que no solo cumplan con los requisitos técnicos, sino que también ofrezcan una experiencia de usuario excepcional.",
     "skills_description": "Desde SinglePage hasta aplicaciones con integracion backend. Trabajando con tecnologias modernas y escalables para ofrecer soluciones completas faciles de mantener y listas para usuarios reales.",
     "ux_ui_description": "Desarrollar no es solo escribir codigo, es crear experiencias. Apasionado por el diseño UI/UX, me esfuerzo por crear interfaces responsivas, intuitivas y atractivas que no solo funcionen bien, sino que tambien se vean bien."
+  },
+  "work": {
+    "title": "TRABAJOS",
+    "projects": {
+      "title": "(PROYECTOS)",
+      "description": "Experiencias digitales que he ido creando diseñadas para mantener una navegación fluida y atractiva.",
+      "piscinas": {
+        "description": "Gestión de mantenciones y pagos para la empresa."
+      },
+      "casona": {
+        "description": "SAAS de gestión de eventos, reservas y pagos."
+      },
+      "teteria": {
+        "description": "SAAS de gestión de mesas y pedidos."
+      },
+      "states": {
+        "development": "En Desarrollo",
+        "finished": "Terminado",
+        "paused": "Pausado",
+        "coming_soon": "Próximamente"
+      }
+    },
+    "description": "Experiencias digitales que he ido creando diseñadas para mantener una navegación fluida y atractiva."
+  },
+  "my_self": {
+    "title": "DESARROLLADOR",
+    "skills": "Habilidades",
+    "languages_tools": "Lenguajes & Herramientas",
+    "frameworks": "Frameworks & Librerias",
+    "my_self_text": "Soy un desarrollador apasionado por la pasión de convertir ideas en experiencias digitales.",
+    "about_me": "(Sobre mí)",
+    "about_me_description": "Desarrollador full stack con más de 2 años de experiencia, tanto frontend como backend. Titulado como Analista Programador Computacional y actualmente cursando Ingeniería en Desarrollo de Software, lo que me permite profundizar en arquitectura, buenas prácticas y liderazgo técnico.",
+    "about_me_description2": "Me motiva aprender, resolver problemas complejos y colaborar en equipo para entregar productos de calidad. Busco seguir creciendo en entornos donde pueda aportar valor con soluciones eficientes y escalables."
   },
   "contact_me": {
     "ideas": "TIENES ALGUNA IDEA EN MENTE?",
