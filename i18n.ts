@@ -14,9 +14,17 @@ i18n
       es: { translation: es },
     },
     fallbackLng: "en", // idioma por defecto
+    supportedLngs: ["en", "es"], // "es-CL" del navegador se resuelve a "es"
     interpolation: {
       escapeValue: false, // React ya hace el escape
     },
   });
+
+// mantiene <html lang> sincronizado (accesibilidad y SEO)
+const syncHtmlLang = (lng: string) => {
+  document.documentElement.lang = lng.split("-")[0];
+};
+syncHtmlLang(i18n.resolvedLanguage ?? "en");
+i18n.on("languageChanged", syncHtmlLang);
 
 export default i18n;

@@ -1,9 +1,16 @@
 .custom_input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-muted);
   border-radius: 16px;
   font-size: 16px;
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.custom_input:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
 }
 
 .custom_input.area {

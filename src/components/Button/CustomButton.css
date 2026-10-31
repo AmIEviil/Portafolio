@@ -38,3 +38,13 @@
   position: relative;
   z-index: 1;
 }
+
+.btn-default:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-default:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 3px;
+}

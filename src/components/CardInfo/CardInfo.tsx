@@ -1,46 +1,44 @@
 import { useTranslation } from "react-i18next";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import s from "./CardInfo.module.css";
 
-gsap.registerPlugin(ScrollTrigger);
 const CardInfo = () => {
   const { t } = useTranslation();
 
-  const fullStackSkills = [
+  // Cada servicio agrupa sus skills en filas (01, 02, 03)
+  const services = [
     {
-      index: "01",
-      skills: ["Vue.js", "React", "Node.js"],
+      title: t("fullstack_developer"),
+      description: t("card_info.skills_description"),
+      rows: [
+        ["React", "Next.js", "Vue.js"],
+        ["NestJS", "Node.js", "REST APIs"],
+        ["PostgreSQL", "MySQL", "Prisma", "TypeORM"],
+      ],
     },
     {
-      index: "02",
-      skills: ["REST APIs", "MySQL", "Oracle "],
+      title: "UI/UX & Frontend",
+      description: t("card_info.ux_ui_description"),
+      rows: [
+        ["TailwindCSS", "GSAP"],
+        [t("card_info.figma_to_code"), t("card_info.responsive")],
+        [t("card_info.i18n"), "TypeScript"],
+      ],
     },
     {
-      index: "03",
-      skills: ["Postman", "Git", "GitHub"],
-    },
-  ];
-
-  const uiUxSkills = [
-    {
-      index: "01",
-      skills: ["TailwindCSS", "GSAP", "Bootstrap"],
-    },
-    {
-      index: "02",
-      skills: ["Figma a Codigo"],
-    },
-    {
-      index: "03",
-      skills: ["HTML", "CSS", "JavaScript"],
+      title: t("card_info.cloud_title"),
+      description: t("card_info.cloud_description"),
+      rows: [
+        ["AWS", "Azure"],
+        ["Docker", t("card_info.vps")],
+        ["SonarQube", "Git", "GitHub"],
+      ],
     },
   ];
 
   return (
     <div className={s.card_container}>
       <div className={s.presentation_container}>
-        <span className={s.card_title}>{t("card_info.who_im")}</span>
+        <h2 className={s.card_title}>{t("card_info.who_im")}</h2>
         <div className={s.card_text_container}>
           <p className={s.card_subtitle}>{t("card_info.about_me")}</p>
           <span className={s.card_description}>
@@ -48,56 +46,32 @@ const CardInfo = () => {
           </span>
         </div>
       </div>
-      <div className={s.skills_container}>
-        <div className={s.card_title_container}>
-          <span className={s.card_title_secondary}>(01)</span>
-          <span className={s.card_title_secondary}>
-            {t("fullstack_developer")}
-          </span>
-        </div>
-        <div className={s.card_text_container}>
-          <span className={s.card_description}>
-            {t("card_info.skills_description")}
-          </span>
-        </div>
-        {fullStackSkills.map((item, idx) => (
-          <div
-            key={item.index}
-            className={`${s.skills_list} ${idx === 0 ? s.first : ""}`}
-          >
-            <span>{item.index}</span>
-            {item.skills.map((skill) => (
-              <span key={skill} className={s.skill_item}>
-                {skill}
-              </span>
-            ))}
+      {services.map((service, serviceIdx) => (
+        <div key={service.title} className={s.skills_container}>
+          <div className={s.card_title_container}>
+            <span className={s.card_title_secondary}>
+              (0{serviceIdx + 1})
+            </span>
+            <h3 className={s.card_title_secondary}>{service.title}</h3>
           </div>
-        ))}
-      </div>
-      <div className={s.ui_ux_container}>
-        <div className={s.card_title_container}>
-          <span className={s.card_title_secondary}>(02)</span>
-          <span className={s.card_title_secondary}>UI/UX & Frontend</span>
-        </div>
-        <div className={s.card_text_container}>
-          <span className={s.card_description}>
-            {t("card_info.ux_ui_description")}
-          </span>
-        </div>
-        {uiUxSkills.map((item, idx) => (
-          <div
-            key={item.index}
-            className={`${s.skills_list} ${idx === 0 ? s.first : ""}`}
-          >
-            <span>{item.index}</span>
-            {item.skills.map((skill) => (
-              <span key={skill} className={s.skill_item}>
-                {skill}
-              </span>
-            ))}
+          <div className={s.card_text_container}>
+            <span className={s.card_description}>{service.description}</span>
           </div>
-        ))}
-      </div>
+          {service.rows.map((row, idx) => (
+            <div
+              key={idx}
+              className={`${s.skills_list} ${idx === 0 ? s.first : ""}`}
+            >
+              <span>0{idx + 1}</span>
+              {row.map((skill) => (
+                <span key={skill} className={s.skill_item}>
+                  {skill}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };

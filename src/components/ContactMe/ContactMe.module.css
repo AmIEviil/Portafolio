@@ -35,3 +35,24 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+.status {
+  min-height: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact_container {
+    padding: 3rem 1rem;
+  }
+
+  .idea_text {
+    font-size: 1.5rem;
+  }
+
+  .form_container {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+}

@@ -39,7 +39,6 @@
   flex-direction: row;
   justify-content: start;
   align-items: start;
-  width: 60%;
   gap: 2rem;
 }
 
@@ -72,19 +71,146 @@
   width: 100%;
 }
 
-.imgContainer {
-  width: 80%;
-  image-resolution: from-image;
-  border-radius: 0.5rem;
+.imgWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
   padding: 1rem;
+}
+
+.imgContainer {
+  width: 85%;
+  border-radius: 0.5rem;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  /* en mobile (4:3) mantiene el monitor a la vista */
+  object-position: 50% 30%;
+}
+
+/* Datos rápidos bajo la foto */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 2rem;
+  width: 85%;
+}
+
+.fact {
+  border-top: 2px solid var(--color-text);
+  padding-top: 0.5rem;
+}
+
+.factLabel {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+
+.factValue {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Disponibilidad (badge con punto verde) */
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  border: 1px solid var(--color-text);
+  border-radius: 2rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.availability::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #22c55e 30%, transparent);
+}
+
+/* Hobbies */
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.hobby {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-radius: 2rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Rasgos profesionales */
+.traits {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.traitsTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.traitsList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+  list-style: none;
+}
+
+.trait {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-top: 2px solid var(--color-text);
+  padding-top: 0.75rem;
+}
+
+.traitIndex {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.traitTitle {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.traitText {
+  font-size: 0.95rem;
+}
+
+.highlight {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 75%;
+}
+
+.aboutMeLabel {
+  white-space: nowrap;
+  color: var(--color-muted);
 }
 
 .aboutMeTextContainer {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 2rem;
+  gap: 2.5rem;
   width: 100%;
+  padding-top: 1rem;
 }
 .aboutMeDescriptionText {
   display: flex;
@@ -100,6 +226,56 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 1rem;
+  gap: 1.5rem;
   width: 100%;
+  max-width: 65ch;
+}
+
+@media (max-width: 768px) {
+  .myselfContainer {
+    padding: 0 1rem;
+  }
+
+  .myselfContent,
+  .aboutMeContainer,
+  .aboutMeDescriptionText {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 12vw;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .descriptionSkills {
+    flex-wrap: wrap;
+  }
+
+  .aboutMeContainer {
+    padding-top: 2rem;
+  }
+
+  .imgWrapper {
+    padding: 0;
+  }
+
+  .imgContainer,
+  .facts {
+    width: 100%;
+  }
+
+  .imgContainer {
+    aspect-ratio: 4 / 3;
+  }
+
+  .traitsList {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight {
+    width: 100%;
+  }
 }

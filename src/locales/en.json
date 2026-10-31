@@ -1,66 +1,188 @@
 {
   "fullstack_developer": "Full Stack Developer",
-  "home": "Home",
-  "about": "About",
-  "projects": "Projects",
-  "contact": "Contact",
-  "body": {
-    "first_text": "Passionate about learning, improving, and growing.",
-    "second_text": "Always seeking new challenges.",
-    "third_text": "Ready to collaborate on innovative projects.",
-    "fourth_text": "Open to opportunities."
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "experience": "Experience",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "menu": "Menu"
+  },
+  "hero": {
+    "first_text": "I build web platforms end to end: interface, API, database and deployment.",
+    "second_text": "3+ years shipping production systems for mining, the public sector and private clients.",
+    "stack": "React · Vue · Next.js · NestJS · PostgreSQL · AWS · Azure",
+    "download_cv": "Download CV"
   },
   "card_info": {
     "who_im": "WHAT I DO",
     "about_me": "(SERVICES)",
-    "my_description": "I specialize in creating complete web applications, from designing attractive interfaces to implementing robust backend solutions. My focus is on delivering high-quality products that not only meet technical requirements but also offer an exceptional user experience.",
-    "skills_description": "From SinglePage to applications with backend integration. Working with modern and scalable technologies to provide complete solutions that are easy to maintain and ready for real users.",
-    "ux_ui_description": "Developing is not just writing code, it's creating experiences. Passionate about UI/UX design, I strive to create responsive, intuitive, and attractive interfaces that not only work well but also look good."
+    "my_description": "I build complete web applications: clear interfaces, APIs and business logic, data modeling and cloud infrastructure. I take part from requirements gathering until the system is running in production.",
+    "skills_description": "Management systems, SaaS platforms and integrations with external services such as payments, authentication or weather data. Maintainable code, built to grow.",
+    "ux_ui_description": "A good application also has to be easy to use. I turn Figma designs into responsive, consistent and multilingual interfaces, taking care of the details of every interaction.",
+    "cloud_title": "Cloud & DevOps",
+    "cloud_description": "Deployment and operation on AWS, Azure or self-managed servers with Docker, with code quality reviewed through SonarQube.",
+    "figma_to_code": "Figma to code",
+    "responsive": "Responsive design",
+    "i18n": "Multilingual (i18n)",
+    "vps": "Linux VPS"
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "subtitle": "(CAREER)",
+    "description": "Over three years building software, both in company teams and on my own projects.",
+    "present": "Present",
+    "education": "Education",
+    "graduated": "Graduated",
+    "jobs": {
+      "consulting": {
+        "role": "Full Stack Developer",
+        "company": "IT consulting firm",
+        "description": "Building custom platforms for clients across different industries, such as environmental management for mining and a sales and subscription system for a municipal club. I work on frontend, backend, integrations and cloud deployment."
+      },
+      "water": {
+        "role": "Software Engineer",
+        "company": "Water resources management company",
+        "description": "Built well monitoring and water extraction data reporting systems for mining companies, rural water utilities and government agencies. Actively proposed improvements based on each client's needs."
+      },
+      "internship": {
+        "role": "Internship",
+        "company": "Software development",
+        "description": "First step into professional development, working within a software team."
+      }
+    },
+    "degrees": {
+      "engineering": "Software Development Engineering",
+      "analyst": "Computer Programming Analyst"
+    }
   },
   "work": {
     "title": "WORK",
     "projects": {
       "title": "(PROJECTS)",
-      "description": "Digital experiences I have been creating, designed to maintain smooth and engaging navigation.",
-      "piscinas": {
-        "description": "Management of maintenance and payments for the company."
+      "description": "A selection of systems I have worked on as a full stack developer, both at companies and independently. For confidentiality, company projects are shown without client names.",
+      "filters": {
+        "all": "All",
+        "professional": "Company",
+        "personal": "Independent"
       },
-      "casona": {
-        "description": "SAAS for event management, reservations, and payments."
+      "categories": {
+        "professional": "Company",
+        "personal": "Independent"
       },
-      "teteria": {
-        "description": "SAAS for table and order management."
+      "clients": {
+        "water": "Water resources management company",
+        "consulting": "IT consulting firm",
+        "independent": "Independent project"
+      },
+      "wells": {
+        "title": "Well Monitoring",
+        "description": "Platform to control and manage well monitoring points for mining companies and rural water utilities.",
+        "sector": "Mining · Water"
+      },
+      "water_data": {
+        "title": "Water Extraction Reporting",
+        "description": "System that transmits water extraction data from mining and rural utility wells to government agencies.",
+        "sector": "Public sector · Water"
+      },
+      "wildlife": {
+        "title": "Wildlife Relocation",
+        "description": "Management of endangered species that must be relocated before land can be used for mineral extraction. Integrates weather data from external services.",
+        "sector": "Mining · Environment"
+      },
+      "club": {
+        "title": "Municipal Club: Sales & Subscriptions",
+        "description": "Management and sales of programs and activities for a municipal club: subscriptions, contracts, scholarships and gift cards, with Google and Microsoft sign-in.",
+        "sector": "Sports · Municipal"
+      },
+      "pools": {
+        "description": "Client and pool maintenance management: per-pool records, workers, vehicles, inventory with stock alerts, sales, jobs, coatings and repairs.",
+        "sector": "Services · Maintenance"
+      },
+      "encanto": {
+        "description": "System for an events venue: tables and orders, inventory, sales, staff working hours and event management with capacity and schedules. Includes a public site to buy tickets with Mercado Pago.",
+        "sector": "Food & drink · Events"
       },
       "states": {
-        "development": "In Development",
-        "finished": "Finished",
+        "production": "In production",
+        "development": "In development",
+        "upcoming": "Launching soon",
         "paused": "Paused",
-        "coming_soon": "Coming Soon"
+        "finished": "Finished"
       }
-    },
-    "description": "Digital experiences I have been creating, designed to maintain smooth and engaging navigation."
+    }
   },
   "my_self": {
     "title": "DEVELOPER",
     "skills": "Skills",
-    "languages_tools": "Languages & Tools",
-    "frameworks": "Frameworks & Libraries",
-    "my_self_text": "I am a developer passionate about turning ideas into digital experiences.",
+    "languages": "Languages",
+    "frameworks": "Frameworks & libraries",
+    "tools": "Tools & cloud",
+    "photo_alt": "Gonzalo Caro's workspace",
+    "my_self_text": "I turn real business needs into software people use every day.",
     "about_me": "(About Me)",
-    "about_me_description": "Full stack developer with over 2 years of experience, both frontend and backend. Graduated as a Computer Programming Analyst and currently pursuing a Software Development Engineering degree, which allows me to deepen my knowledge in architecture, best practices, and technical leadership.",
-    "about_me_description2": "I am motivated by learning, solving complex problems, and collaborating in a team to deliver quality products. I aim to continue growing in environments where I can provide value through efficient and scalable solutions."
+    "about_me_description": "I'm Gonzalo, I'm {{age}} and I live in Santiago, Chile. I'm a full stack developer with degrees in Software Development Engineering and Computer Programming Analysis, and over three years of professional experience.",
+    "about_me_description2": "I have worked on systems for mining, public agencies, environmental management and commerce. I like to get involved beyond the code: understanding the business, proposing improvements and talking directly with clients to reach the right solution.",
+    "facts": {
+      "age": "Age",
+      "age_value": "{{age}} years",
+      "location": "Location",
+      "location_value": "Santiago, Chile",
+      "experience": "Experience",
+      "experience_value": "3+ years",
+      "focus": "Focus",
+      "focus_value": "Full Stack",
+      "modality": "Work mode",
+      "modality_value": "Remote · Hybrid",
+      "english": "English",
+      "english_value": "Intermediate"
+    },
+    "traits_title": "How I work",
+    "traits": {
+      "resolutive": {
+        "title": "Problem solver",
+        "text": "When something gets stuck, I find a way out: I research, test and propose alternatives before the problem grows."
+      },
+      "committed": {
+        "title": "Committed",
+        "text": "I take ownership of what I build, from the first meeting until it runs in production, and after that too."
+      },
+      "passionate": {
+        "title": "Passionate",
+        "text": "I enjoy learning: I try new tools on my own projects before bringing them to work."
+      },
+      "team": {
+        "title": "Team player",
+        "text": "I explain technical topics in simple terms and work well with clients, designers and other developers."
+      }
+    },
+    "availability": "Open to opportunities and new development projects",
+    "hobbies_title": "Beyond code",
+    "hobbies": {
+      "music": "Listening to music",
+      "vinyl": "Collecting vinyl records",
+      "games": "PC and console gaming",
+      "bike": "Cycling"
+    }
   },
   "contact_me": {
-    "ideas": "DO YOU HAVE AN IDEA IN MIND?",
-    "make_it_real": "LET'S MAKE IT REAL",
+    "ideas": "HAVE A PROJECT IN MIND?",
+    "make_it_real": "LET'S TALK",
     "your_idea": "Tell me your idea",
     "email": "Email",
     "name": "Name",
     "message": "Message",
-    "send_message": "Send Message"
+    "send_message": "Send message",
+    "sending": "Sending…",
+    "success": "Thanks! Your message was sent, I'll get back to you soon.",
+    "error": "The message could not be sent. Try again or email me at {{email}}.",
+    "subject": "New message from {{name}} via the portfolio"
   },
   "footer": {
-    "rights_reserved": "All rights reserved.",
-    "social_media": "Social Media"
+    "social_media": "Social",
+    "back_to_top": "Back to top"
   }
 }

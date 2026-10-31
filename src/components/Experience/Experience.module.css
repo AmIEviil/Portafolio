@@ -1,0 +1,154 @@
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--color-muted);
+  line-height: 1;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-self: end;
+  width: 50%;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.introText {
+  font-size: 1rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 2fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-top: 2px solid var(--color-text);
+}
+
+.job:last-child {
+  border-bottom: 2px solid var(--color-text);
+}
+
+.period {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-muted);
+}
+
+.jobInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.role {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.description {
+  font-size: 1rem;
+  max-width: 65ch;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding-top: 0.5rem;
+}
+
+.tech {
+  border: 1px solid var(--color-text);
+  padding: 0.2rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 2fr;
+  gap: 2rem;
+}
+
+.educationTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-muted);
+}
+
+.degrees {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.degree {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.graduated {
+  color: var(--color-muted);
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .experienceContainer {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 12vw;
+  }
+
+  .intro {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .job,
+  .education {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .role {
+    font-size: 1.5rem;
+  }
+}

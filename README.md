@@ -1,24 +1,30 @@
-# Portafolio 2025
+# Portafolio · Gonzalo Caro
 
-¡Hola! Soy Gonzalo Caro **Desarrollador Full Stack** y este portafolio es una muestra de mis habilidades y proyectos.
+Portafolio personal de **Gonzalo Caro**, desarrollador full stack. Publicado en [gonzalo-caro.vercel.app](https://gonzalo-caro.vercel.app/).
 
-## Sobre mí
+## Stack
 
-Apasionado por la tecnología, desarrollo soluciones completas tanto en el frontend como en el backend.
+- React 19 + TypeScript + Vite
+- Tailwind CSS v4 y CSS Modules
+- GSAP (ScrollSmoother / ScrollTrigger)
+- i18next (español / inglés)
 
-## Tecnologías
+## Desarrollo
 
-- JavaScript / TypeScript
-- React / Angular / Vue
-- Node.js
-- SQL / PostgresSQWL
-- HTML5 / CSS3 / 
+```bash
+yarn install
+yarn dev       # servidor de desarrollo
+yarn build     # type-check + build de producción
+yarn lint
+```
+
+## Configuración
+
+- **Formulario de contacto:** usa [Web3Forms](https://web3forms.com). Copia `.env.example` a `.env` y define `VITE_WEB3FORMS_KEY` (en Vercel, como variable de entorno del proyecto). Sin la key, el formulario abre el cliente de correo como respaldo.
+- **CV:** deja el PDF en `public/cv/Gonzalo_Caro_CV.pdf`.
 
 ## Contacto
 
-- Email: tuemail@ejemplo.com
-- [LinkedIn](https://linkedin.com/in/tuusuario)
-
----
-
-¡Gracias por visitar mi portafolio!
+- Email: gcarootarola@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/gcaro-otarola/)
+- [GitHub](https://github.com/AmIEviil)

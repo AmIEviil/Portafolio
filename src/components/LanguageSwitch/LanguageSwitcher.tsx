@@ -13,10 +13,11 @@ const LanguageSwitcher = ({ version = "clasic" }: LanguageSwitcherProps) => {
     { code: "es", label: "ES" },
   ];
 
+  // el LanguageDetector ya persiste la elección en localStorage (i18nextLng)
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
-    localStorage.setItem("selectedLanguage", lang);
   };
+  const current = i18n.resolvedLanguage;
 
   return (
     <div className={`language-switcher ${version}`}>
@@ -25,10 +26,11 @@ const LanguageSwitcher = ({ version = "clasic" }: LanguageSwitcherProps) => {
           key={lang.code}
           onClick={() => changeLanguage(lang.code)}
           className={`btn-language 
-            ${i18n.language === lang.code ? "active" : "cursor-pointer"}
+            ${current === lang.code ? "active" : "cursor-pointer"}
             ${version === "clasic" ? "py-1 px-3" : "short"}
             `}
-          disabled={i18n.language === lang.code}
+          disabled={current === lang.code}
+          aria-pressed={current === lang.code}
         >
           {lang.label}
         </button>

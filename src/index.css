@@ -13,6 +13,9 @@
   --color-muted: var(--custom-taupe-gray);
   --color-surface: var(--custom-white);
 
+  /* alto del header fijo (TopBar) */
+  --header-height: 64px;
+
   /* scrollbar tokens */
   --scrollbar-track: #000;
   --scrollbar-thumb: var(--custom-dim-gray);
@@ -43,6 +46,11 @@ body {
   overflow-y: auto;
 
   transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* las secciones no quedan tapadas por el header fijo al navegar sin ScrollSmoother */
+section {
+  scroll-margin-top: var(--header-height);
 }
 
 /* Ejemplo de "surface" (tarjetas, paneles) */
